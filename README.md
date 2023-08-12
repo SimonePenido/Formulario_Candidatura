@@ -8,10 +8,4 @@
 - ``HTML``
 -  ``CSS``
 
-## Acesso ao Projeto
 
-Clique [Aqui](https://github.com/SimonePenido/Formulario_Candidatura_Emprego)
-
-## Acesso ao Site
-
-Clique [Aqui](https://simonepenido.github.io/Formulario_Candidatura_Emprego/)
