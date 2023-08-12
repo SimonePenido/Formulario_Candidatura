@@ -1,3 +1,17 @@
-# FreeCodeCamp
-Repositório dos projetos realizados na plataforma FreeCodeCamp ao longo da capacitação.
-Perfil: https://www.freecodecamp.org/portuguese/SimonePenido
+<h1>Formulário de Candidatura de Emprego</h1>
+
+![Formulário de Candidatura para Emprego](https://github.com/SimonePenido/Formulario_Candidatura_de_Emprego/assets/112627846/f2a8d259-26db-48fe-afae-f21411884596)
+
+:construction: Projeto em construção :construction:
+
+## Tecnologias Utilizadas
+- ``HTML``
+-  ``CSS``
+
+## Acesso ao Projeto
+
+Clique [Aqui](https://github.com/SimonePenido/Formulario_Candidatura_Emprego)
+
+## Acesso ao Site
+
+Clique [Aqui](https://simonepenido.github.io/Formulario_Candidatura_Emprego/)
