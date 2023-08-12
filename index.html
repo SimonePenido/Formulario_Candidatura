@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+  <head>
+  <html lang="pt-br">
+  <meta charset="UTF-8"> 
+  <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div class="conteiner">
+
+      <header class="header">
+        <h1 id="title" class="text-center">Formulário de Candidatura</h1>
+          <p id="description" class="description text-center">Preencha o questionário abaixo para fazer parte do nosso Banco de Talentos: </p>
+      </header>
+
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Nome:</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Escreva seu nome" required/>
+    </div>
+
+        <div class="form-group">
+            <label id="email-label" for="email">Email:</label>
+              <input type="email" name="email" id="email" class="form-control" placeholder="Escreva seu Email" required/>
+    </div>
+
+    <div class="form-group">
+      <label id="number-label" for="number">Idade <span class="clue">(Opcional): </span></label>
+        <input type="number" name="idade" id="number" min="0" max="120" class="form-control" placeholder="Idade"/>
+    </div>
+
+    <div class="form-group">
+        <p>Qual opção melhor descreve sua escolaridade?</p>
+        <select id="dropdown" name="escolaridade" class="form-control" required>
+        <option desabled selected value>Selecione sua Escolaridade</option>
+        <option value="nao-frequentou">Não Frequentou</option>
+        <option value="fundamental-inc">Fundamental Incompleto</option>
+        <option value="fundamental-com">Fundamental Completo</option>
+        <option value="medio-inc">Ensino Médio Incompleto</option>
+        <option value="medio-com">Ensino Médio Completo</option>
+        <option value="superior-inc">Superior Incompleto</option>
+        <option value="superior-com">Superior Completo</option>
+        <option value="pos-inc">Pós Graduação Incompleta</option>
+        <option value="pos-com">Pós Graduação Completa</option>
+        <option value="mestrado">Mestrado</option>
+        <option value="doutorado">Doutorado</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Qual o pronome mais adequado para você?</p>
+        
+      <label><input name="pronome" value="ela-dela"  type="radio" class="input-radio" checked/>Ela / Dela</label>
+      <label><input name="pronome" value="ele-dele"  type="radio" class="input-radio"/>Ele / Dele</label>
+      <label><input name="pronome" value="elu-delu"  type="radio" class="input-radio"/>Elu / Delu</label>
+      <label><input name="pronome" value="outros"  type="radio" class="input-radio"/>Outros</label>
+      <label><input name="pronome" value="nao-responder"  type="radio" class="input-radio"/>Prefiro não responder</label>
+      </div>
+
+    <div class="form-group">
+      <p>Selecione o gênero o qual você se identifica:</p>
+        <select id="genero" name="genero" class="form-control" required>
+          <option disabled selected value>Selecione a opção</option>
+          <option value="feminino">Feminino</option>
+          <option value="masculino">Masculino</option>
+          <option value="nao-binario">Não-binário</option>
+          <option value="gen-outros">Outros</option>
+          <option value="prefiro-nao">Prefiro não responder</option>
+    </select>
+</div>
+
+    <div class="form-group">
+      <p>Como ficou sabendo da vaga?
+        <span class="clue">(Marque a opção que se aplica)</span></p>
+          <label><input name="como" value="indicacao" type="checkbox" class="input-checkbox"/>Indicação</label>
+          <label><input name="como" value="redes-sociais" type="checkbox" class="input-checkbox"/>Redes Sociais</label>
+          <label><input name="como" value="site-empresa" type="checkbox" class="input-checkbox"/>Site da Empresa</label>
+          <label><input name="como" value="jornal" type="checkbox" class="input-checkbox"/>Jornal</label>
+          <label><input name="como" value="site-empregos" type="checkbox" class="input-checkbox"/>Sites de Emprego</label>
+          <label><input name="como" value="outros" type="checkbox" class="input-checkbox"/>Outros</label>  
+    </div>
+
+    <div class="form-group">
+      <p>Você deseja se candidatar como Pessoa com Deficiência?</p>
+        <label><input name="pronome" value="nao-def"  type="radio" class="input-radio" checked/>Não</label>
+        <label><input name="pronome" value="sim-def"  type="radio" class="input-radio"/>Sim</label>
+    </div>
+
+    <div class="form-group">
+      <label for="profile-picture">Carregue seu currículo:<input id="profile-picture" type="file" name="file"/></label>
+    </div>
+
+    <div class="form-group">
+          <p>Algum comentário ou sugestão?</p>
+            <textarea id="comments" class="input-textarea" name="comment"
+            placeholder="Escreva seu comentário aqui..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">ENVIAR</button>
+    </div>
+
+      </form>
+      </div>
+    </body>
+    <footer>Simone Penido {FreeCodeCamp 2023}</footer>
+</html>

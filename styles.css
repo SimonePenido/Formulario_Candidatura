@@ -1,0 +1,202 @@
+/* Importação da fonte 'Poppins' do Google Fonts com diferentes pesos */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+/* Definição das variáveis de cores personalizadas */
+:root {
+  --color-white: #f3f3f3; /* Cor branca */
+  --color-darkred: #2c0402; /* Cor vermelho escuro */
+  --color-darkred-alpha: rgba(32, 6, 6, 0.8); /* Cor vermelho escuro com transparência */
+  --color-orange: #f3a531; /* Cor laranja */
+}
+
+/* Definição do box-sizing para todos os elementos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Estilos para o corpo do documento */
+body {
+  font-family: 'Poppins', sans-serif; /* Fonte 'Poppins' */
+  font-size: 1rem; /* Tamanho da fonte */
+  font-weight: 400; /* Peso da fonte */
+  line-height: 1.4; /* Altura da linha */
+  color: var(--color-white); /* Cor do texto branca */
+  margin: 0; /* Margem zero */
+}
+
+/* Fundo com gradiente e imagem de plano de fundo */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkred); /* Cor de fundo vermelho escuro */
+  background-image: linear-gradient(
+      115deg,
+      rgba(139, 64, 2, 0.842),
+      rgba(252, 235, 89, 0.7)
+    ),
+    url(img/fundo.jpg); /* Gradiente e imagem de plano de fundo */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Estilos para títulos de primeiro nível */
+h1 {
+  font-weight: 400; /* Peso da fonte */
+  line-height: 1.2; /* Altura da linha */
+}
+
+/* Estilos para parágrafos */
+p {
+  font-size: 1.125rem; /* Tamanho da fonte */
+}
+
+/* Estilos para títulos de primeiro nível e parágrafos */
+h1,
+p {
+  margin-top: 0; /* Margem superior zero */
+  margin-bottom: 0.5rem; /* Margem inferior */
+}
+
+/* Estilos para rótulos de formulário */
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem; /* Tamanho da fonte */
+  margin-bottom: 0.5rem; /* Margem inferior */
+}
+
+/* Estilos para elementos de entrada, botões, seleção e área de texto */
+input,
+button,
+select,
+textarea {
+  margin: 0; /* Margem zero */
+  font-family: inherit; /* Usar a mesma fonte do pai */
+  font-size: inherit; /* Usar o mesmo tamanho de fonte do pai */
+  line-height: inherit; /* Usar a mesma altura de linha do pai */
+}
+
+/* Estilos para botões */
+button {
+  border: none; /* Sem borda */
+}
+
+/* Container com largura máxima e margens automáticas */
+.container {
+  width: 100%; /* Largura máxima */
+  margin: 3.125rem auto 0 auto; /* Margens */
+}
+
+/* Estilos para o cabeçalho */
+.header {
+  padding: 0 0.625rem; /* Preenchimento interno */
+  margin-bottom: 1.875rem; /* Margem inferior */
+}
+
+/* Estilos para a descrição */
+.description {
+  font-style: italic; /* Texto em itálico */
+  font-weight: 200; /* Peso da fonte */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4); /* Sombra de texto */
+}
+
+/* Estilos para caixa de marcação */
+.clue {
+  margin-left: 0.25rem; /* Margem esquerda */
+  font-size: 0.9rem; /* Tamanho da fonte */
+  color: #e4e4e4; /* Cor do texto */
+}
+
+/* Estilos para centralização de texto */
+.text-center {
+  text-align: center;
+}
+
+/* Estilos para o formulário */
+form {
+  background: var(--color-darkred-alpha); /* Cor de fundo com transparência */
+  padding: 2.5rem 0.625rem; /* Preenchimento interno */
+  border-radius: 0.25rem; /* Borda arredondada */
+}
+
+@media (min-width: 480px) {
+  /* Estilos para o formulário em dispositivos maiores */
+  form {
+    padding: 2.5rem; /* Preenchimento interno */
+  }
+}
+
+/* Estilos para o grupo de formulário */
+.form-group {
+  margin: 0 auto 1.25rem auto; /* Margens e espaçamento */
+  padding: 0.25rem; /* Preenchimento interno */
+}
+
+/* Estilos para campos de formulário */
+.form-control {
+  display: block;
+  width: 100%;
+  height: 2.375rem;
+  padding: 0.375rem 0.75rem;
+  color: #3f1d1d; /* Cor do texto */
+  background-color: #fff; /* Cor de fundo */
+  background-clip: padding-box;
+  border: 1px solid #e6f894; /* Borda */
+  border-radius: 0.25rem; /* Borda arredondada */
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out; /* Transição de estilo */
+}
+
+/* Estilos para campos de formulário quando selecionado */
+.form-control:focus {
+  border-color: #d4701d; /* Cor da borda quando selecionado */
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(248, 181, 104, 0.25); /* Sombra quando selecionada */
+}
+
+/* Estilos para campos de marcação e caixa de seleção */
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.625rem; /* Margem à direita */
+  min-height: 1.25rem; /* Altura mínima */
+  min-width: 1.25rem; /* Largura mínima */
+}
+
+/* Estilos para campos de área de texto */
+.input-textarea {
+  min-height: 120px; /* Altura mínima */
+  width: 100%; /* Largura */
+  padding: 0.625rem; /* Preenchimento interno */
+  resize: vertical; /* Redimensionamento vertical */
+}
+
+/* Estilos para botão de envio */
+.submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.75rem; /* Preenchimento interno */
+  background: var(--color-orange); /* Cor de fundo laranja */
+  color: inherit; /* Cor do texto */
+  border-radius: 2px; /* Borda arredondada */
+  cursor: pointer; /* Cursor de apontar */
+}
+
+/* Estilos para botão Carregue seu currículo */
+#profile-picture {
+  padding: .5em; /* Preenchimento interno */
+}
+
+/* Estilos para o rodapé */
+footer {
+  text-align: center; /* Centralização do texto */
+  font-style: italic; /* Texto em itálico */
+  padding: .3em; /* Preenchimento interno */
+}
